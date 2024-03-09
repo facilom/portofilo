@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>yisakorPro</title>
+    <script>
+        function sendMessage() {
+            var userInput = document.getElementById("user-input").value;
+
+            if (userInput) {
+                var chatBox = document.getElementById("chat-box");
+
+                // Display user message
+                var userMessage = document.createElement("div");
+                userMessage.className = "message user";
+                userMessage.textContent = userInput;
+                chatBox.appendChild(userMessage);
+
+                // Simulate bot response
+                setTimeout(function() {
+                    var botMessage = document.createElement("div");
+                    botMessage.className = "message bot";
+                    botMessage.textContent = "yisakorwesenu9@gmail.com get me there for fast rsp";
+                    chatBox.appendChild(botMessage);
+                }, 1000);
+
+                document.getElementById("user-input").value = "";
+            }
+        }
+        //agian
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="ig.jpg">
+        <nav class="navbar">
+            <a href="#" class="active"><i class='bx bxs-home'></i></a>
+            <a href="#"><i class='bx bxl-messenger'></i></a>
+            <a href="#"><i class='bx bx-briefcase'></i></a>
+            <a href="#"><i class='bx bxs-chat'></i></a>
+            <a href="#"><i class='bx bxs-contact' ></i></a>
+
+        </nav>
+    </header>
+
+    <!--The home section-->
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Yisakor Wesenu</h1>
+            <h3>Frontend Developer</h3>
+            <h4 class="para">Skilled in various front-end languages, responsive frameworks, and best coding practices. Eager to explore new technologies and frameworks. Quick learner who can swiftly apply new skills to tackle existing challenges. Enthusiastic about gaining
+                new experiences to advance in front-end development and refine solution-building techniques through hands-on projects. Committed to delivering exceptional results to organizations through dedicated effort. Skilled in various front-end
+                languages, responsive frameworks, and best coding practices. Quick learner who can swiftly apply new skills to tackle existing challenges. Enthusiastic about gaining new experiences to advance in front-end development and refine solution-building
+                techniques through hands-on projects. Committed to delivering exceptional results to organizations through dedicated effort. Skilled in various front-end languages, responsive frameworks, and best coding practices. Eager to explore new
+                technologies and frameworks. Quick learner who can swiftly apply new skills to tackle existing challenges. Enthusiastic about gaining new experiences to advance in front-end development and refine solution-building techniques through hands-on
+                projects. Committed to delivering exceptional results to organizations through dedicated effort.
+            </h4>
+            <div class="btn-box">
+                <a href="#">Hire ME</a>
+                <a href="#">Let's talk</a>
+            </div>
+        </div>
+
+        <!--Simple chat-bot -->
+
+        <div class="chat-container">
+            <div class="chat-box" id="chat-box"></div>
+            <input type="text" id="user-input" placeholder="Get a Quick Response">
+            <button onclick="sendMessage()" class="send"><i class='bx bxs-send'></i></button>
+        </div>
+
+    </section>
+
+
+    <!--The heart of the page-->
+
+
+    <div>
+        <aside class="advertisement">
+            <h2>Projects</h2>
+            <a href="#" class="ad-link">
+                <img src="upwork.jpeg" alt="Advertisement">
+            </a>
+        </aside>
+    </div>
+
+    <div>
+        <aside class="advertisement_2">
+            <h2>Projects</h2>
+            <a href="#" class="add-link">
+
+                <img src="igclon.png" alt="Advertisement">
+            </a>
+        </aside>
+    </div>
+
+    <!--forms-->
+
+
+    <div class="container_s">
+        <form id="contactForm" action="https://formsubmit.co/8d241dd8aecaffd4b1660ad323d5742e" method="POST">
+            <input type="text" id="firstName" class="input_f" placeholder="First Name">
+            <input type="text" id="lastName" class="input_l" placeholder="Last Name">
+            <textarea id="message" class="textarea" placeholder="Your message..."></textarea>
+            <button type="submit" class="button_form">Send</button>
+        </form>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="home-sci">
+            <a href="https://www.facebook.com/yisak.sman" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-upwork' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="#"><i class='bx bx-envelope' ></i></a>
+
+
+        </div>
+        <p>&copy; 2024 Yisakor Wesenu. All rights reserved.</p>
+    </div>
+
+
+</body>
+
+</html>
